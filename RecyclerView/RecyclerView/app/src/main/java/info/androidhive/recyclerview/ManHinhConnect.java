@@ -107,6 +107,9 @@ public class ManHinhConnect extends AppCompatActivity {
 
 
     }
+    
+    
+    // Bỏ hàm hày đi, thay bằng onDestroy(), đông thời không cần startActivity()
     @Override
     public void onBackPressed() {
 
