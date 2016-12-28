@@ -8,10 +8,13 @@ import static android.content.ContentValues.TAG;
  * Created by dinhtho on 21/12/2016.
  */
 
+// bỏ hết các dòng dư thừa, và auto reformat code Control + Alt + L
 public class Device {
 
     private String name, mac;
     private String rssi;
+    
+    // Đổi thành kiểu long 
     private double lastTimeUpdateRssi;
 
     public void setLastTimeUpdateRssi(double lastTimeUpdateRssi) {
@@ -29,6 +32,7 @@ public class Device {
         isConnect = connect;
     }
 
+   // dời khai báo này lên trên cùng với các khai báo khác 
     private boolean isConnect;
 
     public boolean isConnect() {
