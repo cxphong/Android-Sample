@@ -13,6 +13,7 @@ import com.idevicesinc.sweetblue.BleManager;
 
 import java.util.List;
 
+// Chuyển class này vô bên trong MainActivity.java
 public class DevicesAdapter extends RecyclerView.Adapter<DevicesAdapter.MyViewHolder> {
 
 
