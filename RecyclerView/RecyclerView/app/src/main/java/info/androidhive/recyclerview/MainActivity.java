@@ -17,6 +17,7 @@ import com.idevicesinc.sweetblue.utils.BluetoothEnabler;
 import java.util.ArrayList;
 import java.util.List;
 
+// Dư thừa quá nhiều dòng trắng 
 public class MainActivity extends AppCompatActivity {
 
     private List<Device> devicesList = new ArrayList<>();
@@ -208,6 +209,9 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
+    
+    // bỏ devicesList vì nó là field rồi, xài field @devicesList thay thế
+    // đổi tên hàm thành isMacExist(), true if exist, false if not exist
     private boolean CheckMac(List<Device> devicesList,String mac,String rssi){
 
         for(int i=0;i<devicesList.size();i++){
@@ -245,6 +249,8 @@ public class MainActivity extends AppCompatActivity {
 
         return true;
     }
+    
+    
     private void  updateListDevice(){
         for(int i=0;i<eventList.size();i++){
             double firstTime=eventList.get(i).device().getLastDiscoveryTime().toMilliseconds();
@@ -270,6 +276,8 @@ public class MainActivity extends AppCompatActivity {
         }
 
     }
+    
+    
     private void showDevices(List<Device> devicesList){
 
         if(devicesList.isEmpty()){
@@ -285,6 +293,8 @@ public class MainActivity extends AppCompatActivity {
         }
 
     }
+    
+    // sửa thành private và stopScan(), hàm ko bắt đầu bằng chữ in hoa
     public static void StopScan(){
         m_bleManager.stopScan();
         txvS.setText("START SCAN");
@@ -292,6 +302,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    // Bỏ hàm này  hệ thống sẽ tự động chạy
     @Override
     public void onBackPressed() {
         Intent startMain = new Intent(Intent.ACTION_MAIN);
