@@ -1,5 +1,7 @@
 package info.androidhive.recyclerview;
 
+import com.idevicesinc.sweetblue.BleManager;
+
 /**
  * Created by dinhtho on 21/12/2016.
  */
@@ -7,10 +9,32 @@ package info.androidhive.recyclerview;
 
 public class Device {
 
-    private String name, mac;
     private String rssi;
     private boolean isConnect;
     private long lastTimeUpdateRssi;
+    private BleManager.DiscoveryListener.DiscoveryEvent event;
+
+    public Device(BleManager.DiscoveryListener.DiscoveryEvent event) {
+        this.rssi = String.valueOf(event.device().getRssi());
+        this.isConnect = true;
+        this.event = event;
+    }
+
+    public String getRssi() {
+        return rssi;
+    }
+
+    public void setRssi(String rssi) {
+        this.rssi = rssi;
+    }
+
+    public void setEvent(BleManager.DiscoveryListener.DiscoveryEvent event) {
+        this.event = event;
+    }
+
+    public BleManager.DiscoveryListener.DiscoveryEvent getEvent() {
+        return event;
+    }
 
     public void setLastTimeUpdateRssi(long lastTimeUpdateRssi) {
         this.lastTimeUpdateRssi = lastTimeUpdateRssi;
@@ -26,36 +50,5 @@ public class Device {
 
     public boolean isConnect() {
         return isConnect;
-    }
-
-    public Device(String name, String mac, String rssi) {
-        this.name = name;
-        this.rssi = rssi;
-        this.mac = mac;
-        this.isConnect=true;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public String getMac() {
-        return mac;
-    }
-
-    public String getRssi() {
-        return rssi;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setMac(String mac) {
-        this.mac = mac;
-    }
-
-    public void setRssi(String rssi) {
-        this.rssi = rssi;
     }
 }
