@@ -1,7 +1,6 @@
 
 package info.androidhive.recyclerview;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -26,12 +25,6 @@ public class ManHinhConnect extends AppCompatActivity {
     private static final String serviceuuid= "0000fff0-0000-1000-8000-00805f9b34fb";
     private static final UUID MY_SERVICE_UUID = UUID.fromString(serviceuuid);			// NOTE: Replace with your actual UUID.
 
-    private BleManager m_bleManager;
-
-
-
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,26 +35,18 @@ public class ManHinhConnect extends AppCompatActivity {
         txvStatus=(TextView)findViewById(R.id.textViewStatus);
         txvRead=(TextView)findViewById(R.id.textViewRead);
 
-        event=DevicesAdapter.getE();
-
-
-
-
-
+        event=MainActivity.DevicesAdapter.getE();
 
         txvStatus.setText("CONNECTING....");
 
         txvName.setText(event.device().getName_native());
-
-
-
 
         if (event.was(BleManager.DiscoveryListener.LifeCycle.REDISCOVERED)||event.was(BleManager.DiscoveryListener.LifeCycle.DISCOVERED)) {
             event.device().connect(new BleDevice.StateListener() {
                 @Override
                 public void onEvent( StateEvent event) {
                     if (event.didEnter(BleDeviceState.INITIALIZED)) {
-                        Log.i("SweetBlueExample", event.device().getName_debug() + " just initialized!");
+
                         txvStatus.setText("CONNECTED");
 
                         event.device().read(MY_SERVICE_UUID, MY_UUID, new BleDevice.ReadWriteListener() {
@@ -69,7 +54,6 @@ public class ManHinhConnect extends AppCompatActivity {
                             public void onEvent(ReadWriteEvent result) {
                                 if( result.wasSuccess() )
                                 {
-                                    Log.i(TAG, "onEvent: "+"scuccess");
                                     txvRead.setText(Arrays.toString(toHex(result.data())));
 
                                     ByteUtils.printArray(result.data());
@@ -78,13 +62,11 @@ public class ManHinhConnect extends AppCompatActivity {
 
                                 }else {
                                     Log.i(TAG, "onEvent: "+result);
-                                    //Log.e("log la", event.status().toString());
+
 
                                 }
                             }
                         });
-
-
 
                     }
                     else if(event.didEnter(BleDeviceState.DISCONNECTED)){
@@ -96,26 +78,12 @@ public class ManHinhConnect extends AppCompatActivity {
         }
 
 
-
-
-
-
-
-
-
-
-
-
     }
-    
-    
-    // Bỏ hàm hày đi, thay bằng onDestroy(), đông thời không cần startActivity()
-    @Override
-    public void onBackPressed() {
 
+    @Override
+    public void onDestroy() {
         event.device().disconnect();
-        Intent mainS = new Intent(ManHinhConnect.this,MainActivity.class);
-        startActivity(mainS);
+        super.onDestroy();
     }
 
 
