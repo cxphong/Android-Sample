@@ -54,9 +54,30 @@ public class MainActivity extends AppCompatActivity {
 
 
         BluetoothEnabler.start(MainActivity.this);
-
         m_bleManager = BleManager.get(MainActivity.this);
+        startScan();
 
+        txvS = (TextView) findViewById(R.id.textViewS);
+        txvS.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+
+                if (txvS.getText() == "START SCAN") {
+
+                    txvS.setText("STOP SCAN");
+                    startScan();
+                } else {
+
+                    stopScan();
+                }
+
+            }
+        });
+
+    }
+
+    private void startScan() {
         devicesList.clear();
         m_bleManager.startScan(new BleManager.DiscoveryListener() {
             @Override
@@ -66,32 +87,6 @@ public class MainActivity extends AppCompatActivity {
             }
 
         });
-
-        txvS = (TextView) findViewById(R.id.textViewS);
-        txvS.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-
-                if (txvS.getText() == "START SCAN") {
-                    devicesList.clear();
-
-                    txvS.setText("STOP SCAN");
-                    m_bleManager.startScan(new BleManager.DiscoveryListener() {
-                        @Override
-                        public void onEvent(DiscoveryEvent event) {
-                            addDeviceData(event);
-                            showDevices(devicesList);
-                        }
-                    });
-                } else {
-
-                    stopScan();
-                }
-
-            }
-        });
-
     }
 
 
@@ -189,11 +184,6 @@ public class MainActivity extends AppCompatActivity {
         public static BleManager.DiscoveryListener.DiscoveryEvent getE() {
             return e;
         }
-
-        public void setE(BleManager.DiscoveryListener.DiscoveryEvent e) {
-            this.e = e;
-        }
-
 
         public class MyViewHolder extends RecyclerView.ViewHolder {
             public TextView name, mac;
