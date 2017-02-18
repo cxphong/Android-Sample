@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Parcelable Demo</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_other">Other Activity</string>
+</resources>
