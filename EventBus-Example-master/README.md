@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # EventBus
 
 
@@ -16,8 +16,10 @@
 
 Example
 #1. phia gui
-`private EventBus bus = EventBus.getDefault();`
-`bus.postSticky(new LoginEvent(userName.getText().toString()));`
+```
+private EventBus bus = EventBus.getDefault();`
+bus.postSticky(new LoginEvent(userName.getText().toString()));
+```
 #2. phia nhan
 `private EventBus bus = EventBus.getDefault();`
 
