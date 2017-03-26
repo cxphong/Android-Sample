@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/EventBus.iml" filepath="$PROJECT_DIR$/EventBus.iml" />
       <module fileurl="file://$PROJECT_DIR$/EventBus-Example-master.iml" filepath="$PROJECT_DIR$/EventBus-Example-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EventBus-Example-master.iml" filepath="$PROJECT_DIR$/EventBus-Example-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
