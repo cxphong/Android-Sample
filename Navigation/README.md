@@ -2,30 +2,17 @@
 
 TODO: Write a project description
 
-## Installation
+## Installatio
 
-TODO: Describe the installation process
 
-## Usage
 
-TODO: Write usage instructions
 
-## Contributing
 
-1. Fork it!
-2. Create your feature branch: `git checkout -b my-new-feature`
-3. Commit your changes: `git commit -am 'Add some feature'`
-4. Push to the branch: `git push origin my-new-feature`
-5. Submit a pull request :D
+    `compile fileTree(dir: 'libs', include: ['*.jar'])`
+    `compile 'com.android.support:appcompat-v7:24.0.0-beta1'`
+    `compile 'com.android.support:design:24.0.0-beta1'`
+    `compile 'com.android.support:support-v4:24.0.0-beta1'`
+ 
+    // Glide image library
+    `compile 'com.github.bumptech.glide:glide:3.7.0'`
 
-## History
-
-TODO: Write history
-
-## Credits
-
-TODO: Write credits
-
-## License
-
-TODO: Write license
