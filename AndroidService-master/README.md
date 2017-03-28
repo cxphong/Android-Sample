@@ -1,5 +1,5 @@
-Step1: Tạo class Service
-Step2: Viết lại các hàm
+###Step1: Tạo class Service
+###Step2: Viết lại các hàm
 ```
 @Override
    public void onCreate(){
@@ -24,7 +24,7 @@ Step2: Viết lại các hàm
        super.onDestroy();
    }
 ```
-Step3:Sử dụng
+###Step3:Sử dụng
 ```
 Intent myIntent = new Intent(context, ClockService.class);
 context.startService(myIntent);
