@@ -1,5 +1,35 @@
-# LearnService用于学习如何去使用两种方式去启动service
-服务是一个应用程序组件，可以在后台执行长时间运行的操作，不提供用户界面。一个应用程序组件可以启动一个服务，它将继续在后台运行，即使用户切换到另一个应用程序。此外，一个组件可以绑定到一个服务与它交互，甚至执行进程间通信(IPC)。例如，一个服务可能处理网络通信、播放音乐、计时操作或与一个内容提供者交互，都在后台执行。
-1.startService/stopService
-2.bindService/unBindService
-详情请见：http://www.jianshu.com/p/5505390503fa
+###Step1: Tạo class Service
+###Step2: Viết lại các hàm
+```
+@Override
+   public void onCreate(){
+       super.onCreate();
+       // Tạo đối tượng MediaPlayer, chơi file nhạc của bạn.
+       mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.mysong);
+   }
+ 
+   @Override
+   public int onStartCommand(Intent intent, int flags, int startId){
+       // Chơi nhạc.
+       mediaPlayer.start();
+ 
+       return START_STICKY;
+   }
+ 
+   // Hủy bỏ dịch vụ.
+   @Override
+   public void onDestroy() {
+       // Giải phóng nguồn dữ nguồn phát nhạc.
+       mediaPlayer.release();
+       super.onDestroy();
+   }
+```
+###Step3:Sử dụng
+```
+Intent myIntent = new Intent(context, ClockService.class);
+context.startService(myIntent);
+```
+```
+Intent myIntent = new Intent(context, ClockService.class);
+context.stopService(myIntent);
+```
