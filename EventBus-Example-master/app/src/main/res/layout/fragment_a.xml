@@ -1,0 +1,26 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF4081"
+    tools:context="com.android.gifts.eventbus.FragmentA">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/user_status"
+        android:text="User Status : Not Logged in"
+        android:layout_gravity="center"
+        android:textColor="#fff"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="This is Fragment A Layout"
+        android:id="@+id/textView"
+        android:textColor="#fff"
+        android:layout_gravity="center_horizontal|top" />
+
+</FrameLayout>

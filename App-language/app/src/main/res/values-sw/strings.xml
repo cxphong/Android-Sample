@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="buy_token">NUNUA LUKU</string>
+    <string name="seven_days">SIKU-7</string>
+    <string name="thirty_days">SIKU-30</string>
+    <string name="buy">NUNUA</string>
+    <string name="are_you_sure_you_want_to_buy_token">Je! Unataka kununua luku</string>
+    <string name="no">Hapana</string>
+    <string name="yes">Ndiyo</string>
+    <string name="buying_token">Unanunua luku</string>
+    <string name="promotion_offer">Ofa</string>
+    <string name="history">HISTORIA</string>
+    <string name="version">Toleo</string>
+    <string name="serial_number">Namba ya Silia</string>
+    <string name="device_id">Utambulisho wa Kifaa</string>
+    <string name="customer_id">Utambulisho wa Mteja</string>
+    <string name="type">AINA</string>
+    <string name="token">LUKU</string>
+    <string name="time">MUDA</string>
+
+</resources>
