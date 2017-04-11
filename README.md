@@ -1,29 +1,45 @@
-# README #
 
-This README would normally document whatever steps are necessary to get your application up and running.
+# EventBus
 
-### What is this repository for? ###
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+=======
+# Project Name
 
-### How do I get set up? ###
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
 
-### Contribution guidelines ###
+## Installation
 
-* Writing tests
-* Code review
-* Other guidelines
 
-### Who do I talk to? ###
 
-* Repo owner or admin
-* Other community or team contact
+`compile 'org.greenrobot:eventbus:3.0.0'`
+
+
+Example
+#1. phia gui
+```
+private EventBus bus = EventBus.getDefault();`
+bus.postSticky(new LoginEvent(userName.getText().toString()));
+```
+#2. phia nhan
+`private EventBus bus = EventBus.getDefault();`
+
+``` 
+@Subscribe(sticky = true, threadMode = ThreadMode.MAIN)
+    public void onLoginEvent(LoginEvent event){
+        userStatus.setText("User Status : Logged in, userName: " + event.userName);
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+        bus.register(this); // registering the bus
+    }
+
+    @Override
+    public void onStop() {
+        bus.unregister(this); // un-registering the bus
+        super.onStop();
+    }
+```
+
+
