@@ -1,0 +1,5 @@
+<resources>
+
+    <string name="app_name">com.bluetooth.le</string>
+    <string name="exception_not_support_ble">This android device does not support bluetooth low energy</string>
+</resources>

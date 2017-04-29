@@ -1,0 +1,257 @@
+[
+    {
+        "outputFile": "/home/dinhtho/Desktop/greenhouse-android/combluetoothle/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values/values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 53,
+                    "endOffset": 104
+                },
+                "from": {
+                    "file": "/home/dinhtho/Desktop/greenhouse-android/combluetoothle/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 53,
+                        "endOffset": 104
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 109,
+                    "endColumn": 111,
+                    "endOffset": 216
+                },
+                "from": {
+                    "file": "/home/dinhtho/Desktop/greenhouse-android/combluetoothle/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 109,
+                        "endColumn": 111,
+                        "endOffset": 216
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 221,
+                    "endLine": 10,
+                    "endColumn": 12,
+                    "endOffset": 507
+                },
+                "from": {
+                    "file": "/home/dinhtho/Desktop/greenhouse-android/combluetoothle/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 221,
+                        "endLine": 10,
+                        "endColumn": 12,
+                        "endOffset": 507
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 11,
+                    "startColumn": 4,
+                    "startOffset": 512,
+                    "endLine": 13,
+                    "endColumn": 12,
+                    "endOffset": 667
+                },
+                "from": {
+                    "file": "/home/dinhtho/Desktop/greenhouse-android/combluetoothle/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 512,
+                        "endLine": 13,
+                        "endColumn": 12,
+                        "endOffset": 667
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "outputFile": "/Users/caoxuanphong/Documents/PROJECT/greenhouse-android-ver-2/combluetoothle/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values/values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 53,
+                    "endOffset": 104
+                },
+                "from": {
+                    "file": "/Users/caoxuanphong/Documents/PROJECT/greenhouse-android-ver-2/combluetoothle/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 53,
+                        "endOffset": 104
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 109,
+                    "endColumn": 111,
+                    "endOffset": 216
+                },
+                "from": {
+                    "file": "/Users/caoxuanphong/Documents/PROJECT/greenhouse-android-ver-2/combluetoothle/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 109,
+                        "endColumn": 111,
+                        "endOffset": 216
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 221,
+                    "endLine": 10,
+                    "endColumn": 12,
+                    "endOffset": 507
+                },
+                "from": {
+                    "file": "/Users/caoxuanphong/Documents/PROJECT/greenhouse-android-ver-2/combluetoothle/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 221,
+                        "endLine": 10,
+                        "endColumn": 12,
+                        "endOffset": 507
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 11,
+                    "startColumn": 4,
+                    "startOffset": 512,
+                    "endLine": 13,
+                    "endColumn": 12,
+                    "endOffset": 667
+                },
+                "from": {
+                    "file": "/Users/caoxuanphong/Documents/PROJECT/greenhouse-android-ver-2/combluetoothle/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 512,
+                        "endLine": 13,
+                        "endColumn": 12,
+                        "endOffset": 667
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "outputFile": "/Users/caoxuanphong/Documents/PROJECT/GreenHouse/android/greenhouse-android-ver-2/combluetoothle/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values/values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 53,
+                    "endOffset": 104
+                },
+                "from": {
+                    "file": "/Users/caoxuanphong/Documents/PROJECT/GreenHouse/android/greenhouse-android-ver-2/combluetoothle/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 53,
+                        "endOffset": 104
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 109,
+                    "endColumn": 111,
+                    "endOffset": 216
+                },
+                "from": {
+                    "file": "/Users/caoxuanphong/Documents/PROJECT/GreenHouse/android/greenhouse-android-ver-2/combluetoothle/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 109,
+                        "endColumn": 111,
+                        "endOffset": 216
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 221,
+                    "endLine": 10,
+                    "endColumn": 12,
+                    "endOffset": 507
+                },
+                "from": {
+                    "file": "/Users/caoxuanphong/Documents/PROJECT/GreenHouse/android/greenhouse-android-ver-2/combluetoothle/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 221,
+                        "endLine": 10,
+                        "endColumn": 12,
+                        "endOffset": 507
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 11,
+                    "startColumn": 4,
+                    "startOffset": 512,
+                    "endLine": 13,
+                    "endColumn": 12,
+                    "endOffset": 667
+                },
+                "from": {
+                    "file": "/Users/caoxuanphong/Documents/PROJECT/GreenHouse/android/greenhouse-android-ver-2/combluetoothle/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 512,
+                        "endLine": 13,
+                        "endColumn": 12,
+                        "endOffset": 667
+                    }
+                }
+            }
+        ]
+    }
+]
