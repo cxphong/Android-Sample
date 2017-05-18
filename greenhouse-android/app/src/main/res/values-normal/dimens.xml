@@ -1,7 +1,0 @@
-<resources>
-    <!-- Default screen margins, per the Android Design guidelines. -->
-    <dimen name="size_text_tab">15sp</dimen>
-    <dimen name="size_text">18sp</dimen>
-    <dimen name="size_text_find_device_info">12sp</dimen>
-
-</resources>

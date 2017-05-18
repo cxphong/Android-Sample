@@ -1,2 +1,0 @@
-+ 1.0.0
-	- App didn't support for multiple devices connected yet

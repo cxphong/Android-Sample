@@ -31,19 +31,24 @@ public class FragmentA extends Fragment {
      * Receiving Login event when it happens
      * */
     @Subscribe
-    public void onLoginEvent(LoginEvent event){
-        userStatus.setText("User Status : Logged in, userName: " + event.userName);
+    public void onMessageEvent(MessageEvent event){
+        userStatus.setText("User Status : Logged in, message: " + event.message);
+    }
+
+    @Subscribe
+    public void onYYY(MessageEvent event){
+        userStatus.setText("User Status : Logged in, message: " + event.message);
     }
 
     @Override
     public void onStart() {
         super.onStart();
-        bus.register(this); // registering the bus
+        EventBus.getDefault().register(this); // registering the bus
     }
 
     @Override
     public void onStop() {
-        bus.unregister(this); // un-registering the bus
+        EventBus.getDefault().unregister(this); // un-registering the bus
         super.onStop();
     }
 }

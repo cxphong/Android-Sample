@@ -1,7 +1,0 @@
-- Tắt Get results khi nhận được data trước khi nhấn
-- Hiển thị các device đã pair
-- Xử lý các exception
-- Unit test hết tất cả các function
-- Xử lý UX
-- Handle exception
-- Thêm firebase crash report

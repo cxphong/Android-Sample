@@ -24,11 +24,11 @@ public class SecondActivity extends AppCompatActivity {
 
     /**
      * Receiving Login event when it happens,
-     * Using sticky = true telling the activity please go and get the last LoginEvent has been posted
+     * Using sticky = true telling the activity please go and get the last MessageEvent has been posted
      * */
     @Subscribe(sticky = true, threadMode = ThreadMode.MAIN)
-    public void onLoginEvent(LoginEvent event){
-        userStatus.setText("User Status : Logged in, userName: " + event.userName);
+    public void onLoginEvent(MessageEvent event){
+        userStatus.setText("User Status : Logged in, message: " + event.message);
     }
 
     @Override

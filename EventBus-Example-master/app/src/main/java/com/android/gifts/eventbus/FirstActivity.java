@@ -34,8 +34,8 @@ public class FirstActivity extends AppCompatActivity {
         loginBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // if userName was empty, then show an error,
-                // else, login user and send logged userName to all subscribers
+                // if message was empty, then show an error,
+                // else, login user and send logged message to all subscribers
                 if (userName.getText().toString().isEmpty()) {
                     userName.setError("Please enter username");
                 } else {
@@ -45,7 +45,7 @@ public class FirstActivity extends AppCompatActivity {
                      * (registration happens when activity created) and it will not have any updates
                      * if we posted event normally not sticky
                      * */
-                    bus.postSticky(new LoginEvent(userName.getText().toString()));
+                    bus.postSticky(new MessageEvent(userName.getText().toString()));
                 }
             }
         });
