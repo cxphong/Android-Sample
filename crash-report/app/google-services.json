@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "349010401247",
+    "firebase_url": "https://test-crash-report.firebaseio.com",
+    "project_id": "test-crash-report",
+    "storage_bucket": "test-crash-report.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:349010401247:android:71108fc20d07bb4f",
+        "android_client_info": {
+          "package_name": "crashreport.firebase.fiot.crashreport"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "349010401247-jcf3c91brs6s2r2t4k4curkfhljivhi8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdmajcaPQru7YCWce16o2cwWpfM5x7bxc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

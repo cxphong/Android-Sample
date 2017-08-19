@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Realtime Database</string>
+    <string name="hint_name">Full Name</string>
+    <string name="hint_email">Email</string>
+    <string name="action_save">Save</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+
+
+</resources>

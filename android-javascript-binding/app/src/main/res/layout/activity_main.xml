@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    xmlns:CircleProgressView="http://schemas.android.com/apk/res-auto"
+    android:background="#000000"
+    tools:context="chroma.fiot.chroma.MainActivity">
+
+    <chroma.fiot.chroma.progress.CircleProgressView
+        android:id="@+id/circleView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        CircleProgressView:cpv_autoTextSize="true"
+        CircleProgressView:cpv_barColor="#40ff00"
+        CircleProgressView:cpv_barWidth="5dp"
+        CircleProgressView:cpv_innerContourSize="0dp"
+        CircleProgressView:cpv_maxValue="100"
+        CircleProgressView:cpv_outerContourSize="0dp"
+        CircleProgressView:cpv_rimColor="#e6e6e6"
+        CircleProgressView:cpv_rimWidth="5dp"
+        CircleProgressView:cpv_seekMode="true"
+        CircleProgressView:cpv_showUnit="true"
+        CircleProgressView:cpv_spinColor="#ff0000"
+        CircleProgressView:cpv_textColor="#ffffff"
+        CircleProgressView:cpv_textScale="0.5"
+        CircleProgressView:cpv_unit="%"
+        CircleProgressView:cpv_unitColor="#ffffff"
+        CircleProgressView:cpv_unitPosition="right_top"
+        CircleProgressView:cpv_unitScale="0.5"
+        CircleProgressView:cpv_value="80" />
+
+</RelativeLayout>
