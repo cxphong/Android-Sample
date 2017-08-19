@@ -1,5 +1,2 @@
-Convert json to java class
-	http://pojo.sodhanalibrary.com/Convert
-	
-Check format json
-	http://jsonlint.com/
+- Post chỉ có parameter ko có file
+- Dùng format url-form-encoded
