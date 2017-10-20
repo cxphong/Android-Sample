@@ -29,6 +29,14 @@ public class MessageEvent {
 }
 ```
 
+### Send event
+```java
+    private EventBus bus = EventBus.getDefault();
+    
+    ...
+    bus.postSticky(new MessageEvent(userName.getText().toString()));
+```
+
 ### Lắng nghe MessageEvent
 
 
