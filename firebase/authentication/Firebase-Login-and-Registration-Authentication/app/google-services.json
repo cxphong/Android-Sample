@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "956002698870",
+    "firebase_url": "https://baby-monitor-7271e.firebaseio.com",
+    "project_id": "baby-monitor-7271e",
+    "storage_bucket": "baby-monitor-7271e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:956002698870:android:69a8bc7e2e08fe0c",
+        "android_client_info": {
+          "package_name": "com.iot.babymonitor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "956002698870-aeoadk5h54mgb2j5k4e84vfq73lnmv54.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5PamrzClpyOY9AhVmsG4axmrj-0fqZhM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
