@@ -48,25 +48,6 @@ public class MainActivity extends AppCompatActivity {
         // store app title to 'app_title' node
         mFirebaseInstance.getReference("app_title").setValue("Realtime Database");
 
-//        // app_title change listener
-//        mFirebaseInstance.getReference("app_title").addValueEventListener(new ValueEventListener() {
-//            @Override
-//            public void onDataChange(DataSnapshot dataSnapshot) {
-//                Log.e(TAG, "App title updated");
-//
-//                String appTitle = dataSnapshot.getValue(String.class);
-//
-//                // update toolbar title
-//                getSupportActionBar().setTitle(appTitle);
-//            }
-//
-//            @Override
-//            public void onCancelled(DatabaseError error) {
-//                // Failed to read value
-//                Log.e(TAG, "Failed to read app title value.", error.toException());
-//            }
-//        });
-
         // Save / update the user
         btnSave.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -84,7 +65,25 @@ public class MainActivity extends AppCompatActivity {
         });
 
         toggleButton();
+
+        readAllData();
     }
+
+    private void readAllData() {
+        DatabaseReference ref = FirebaseDatabase.getInstance().getReference().child("users");
+        ref.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                Log.i(TAG, "onDataChange: " + dataSnapshot.getValue().toString());
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+                Log.i(TAG, "onCancelled: " + databaseError.getMessage());
+            }
+        });
+    }
+
 
     // Changing button text
     private void toggleButton() {
@@ -119,6 +118,7 @@ public class MainActivity extends AppCompatActivity {
     private void addUserChangeListener() {
         // User data change listener
         mFirebaseDatabase.child(userId).addValueEventListener(new ValueEventListener() {
+
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 User user = dataSnapshot.getValue(User.class);
@@ -139,6 +139,7 @@ public class MainActivity extends AppCompatActivity {
                 inputName.setText("");
 
                 toggleButton();
+
             }
 
             @Override

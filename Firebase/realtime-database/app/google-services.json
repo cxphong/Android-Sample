@@ -1,27 +1,27 @@
 {
   "project_info": {
-    "project_number": "477035272429",
-    "firebase_url": "https://test-database-6c114.firebaseio.com",
-    "project_id": "test-database-6c114",
-    "storage_bucket": "test-database-6c114.appspot.com"
+    "project_number": "858616493729",
+    "firebase_url": "https://realmtime-database.firebaseio.com",
+    "project_id": "realmtime-database",
+    "storage_bucket": "realmtime-database.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:477035272429:android:d842af33038fad5c",
+        "mobilesdk_app_id": "1:858616493729:android:d842af33038fad5c",
         "android_client_info": {
           "package_name": "info.androidhive.firebase"
         }
       },
       "oauth_client": [
         {
-          "client_id": "477035272429-orppahq90ahfkc8fmdl8icie6p24srrc.apps.googleusercontent.com",
+          "client_id": "858616493729-hmunmhgksn2itraul0hu5aqec0cdu8dk.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAzv8p_LScJ0JedL1s18GjvwqYBivYR4Ms"
+          "current_key": "AIzaSyCAySM3LfxJh6dmph3cZzbQjgSWKTDmuH8"
         }
       ],
       "services": {
