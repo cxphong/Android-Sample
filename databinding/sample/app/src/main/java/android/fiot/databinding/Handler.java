@@ -11,8 +11,8 @@ import java.util.Random;
  * Created by caoxuanphong on 12/5/17.
  */
 
-public class MainActivityHandler {
-    private static final String TAG = "MainActivityHandler";
+public class Handler {
+    private static final String TAG = "Handler";
 
     public void onClickUserName(View view, User user) {
         Log.d(TAG, "onClickUser " + view + ", " + user.name.get());
@@ -21,7 +21,30 @@ public class MainActivityHandler {
         user.name.set(getSaltString());
     }
 
-    protected String getSaltString() {
+    public void onClickButton(View view, User user) {
+        Log.d(TAG, "onClickButton: " + user.name.get());
+
+        user.name.set(getSaltString());
+    }
+
+    public TextWatcher onTextChanged = new TextWatcher() {
+        @Override
+        public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+        }
+
+        @Override
+        public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+            Log.d(TAG, "onTextChanged: " + charSequence);
+        }
+
+        @Override
+        public void afterTextChanged(Editable editable) {
+
+        }
+    };
+
+    private String getSaltString() {
         String SALTCHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
         StringBuilder salt = new StringBuilder();
         Random rnd = new Random();

@@ -5,7 +5,7 @@
 
         <variable
             name="handlers"
-            type="android.fiot.databinding.MainActivityHandler" />
+            type="android.fiot.databinding.Handler" />
 
         <variable
             name="user"
@@ -20,9 +20,23 @@
 
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:onClick="@{(view) -> handlers.onClickUserName(view, user)}"
             android:text="@{user.name}" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button"
+            android:onClick="@{(view)->handlers.onClickButton(view, user)}"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{user.name}"
+            android:addTextChangedListener="@{handlers.onTextChanged}"
+            />
+
     </LinearLayout>
 
 </layout>
