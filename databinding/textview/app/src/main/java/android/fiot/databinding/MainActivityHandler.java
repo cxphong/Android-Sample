@@ -15,10 +15,10 @@ public class MainActivityHandler {
     private static final String TAG = "MainActivityHandler";
 
     public void onClickUserName(View view, User user) {
-        Log.d(TAG, "onClickUser " + view + ", " + user.getName());
+        Log.d(TAG, "onClickUser " + view + ", " + user.name.get());
 
         // Update model & view
-        user.setName(getSaltString());
+        user.name.set(getSaltString());
     }
 
     protected String getSaltString() {

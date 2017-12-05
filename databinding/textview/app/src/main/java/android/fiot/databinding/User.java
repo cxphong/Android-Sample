@@ -3,6 +3,7 @@ package android.fiot.databinding;
 import android.databinding.BaseObservable;
 import android.databinding.Bindable;
 import android.databinding.Observable;
+import android.databinding.ObservableField;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
@@ -13,17 +14,5 @@ import android.util.Log;
 
 public class User extends BaseObservable {
     private static final String TAG = "User";
-    private String name = "Phong Cao";
-
-    @Bindable
-    public void setName(String name) {
-        this.name = name;
-        notifyPropertyChanged(BR.name);
-    }
-
-    @Bindable
-    public String getName() {
-        return name;
-    }
-
+    public final ObservableField<String> name = new ObservableField<>();
 }
