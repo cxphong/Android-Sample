@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 第一种加载方式 -->
+    <!--<item android:drawable="@drawable/bg_tab_selected" android:state_checked="true" />-->
+    <!-- 第二种加载方式 -->
+    <item android:state_checked="true">
+        <layer-list>
+            <!-- 红色背景 -->
+            <item>
+                <color android:color="#E4007F" />
+            </item>
+            <!-- 白色背景 -->
+            <!-- android:bottom 设置底部偏移量 -->
+            <!-- 放在 drawable 目录下，必须使用 android:drawable 属性 -->
+            <item android:bottom="4dp" android:drawable="@android:color/white" />
+        </layer-list>
+    </item>
+    <item>
+        <layer-list>
+            <!-- 红色背景 -->
+            <item>
+                <color android:color="#E4007F" />
+            </item>
+            <!-- 白色背景 -->
+            <!-- android:bottom 设置底部偏移量 -->
+            <!-- 放在 drawable 目录下，必须使用 android:drawable 属性 -->
+            <item android:bottom="1dp" android:drawable="@android:color/white" />
+        </layer-list>
+    </item>
+</selector>
